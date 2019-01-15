@@ -16,6 +16,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         return  new StringHttpMessageConverter(Charset.forName("UTF-8"));
     }
 
+
     @Override
     protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(responseBodyConverter());
